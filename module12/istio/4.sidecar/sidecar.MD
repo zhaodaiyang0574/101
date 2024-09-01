@@ -7,6 +7,17 @@ kubectl apply -f nginx.yaml -n sidecar
 kubectl apply -f toolbox.yaml -n sidecar
 ```
 
+```
+apiVersion: v1
+kind: Pod
+metadata:
+spec:
+  containers:
+  xxx
+  dnsPolicy: ClusterFirstWithHostNet
+  enableServiceLinks: true
+```
+
 ### Check clusters
 
 ```sh
