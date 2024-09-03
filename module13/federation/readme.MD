@@ -15,6 +15,14 @@ contexts:
   name: `cluster1`
 current-context: `cluster1`
 
+
+### 安装
+```
+kind create cluster
+make deploy.kind
+kubectl -n kube-federation-system get kubefedcluster -oyaml
+```
+
 ### 报错处理controller-gen object:headerFile=./hack/boilerplate.go.txt paths="./..."
 ```
 cd ~/kubefed/
@@ -28,12 +36,6 @@ vim Makefile
 #       ./scripts/update-bindata.sh
 ```
 
-### 安装
-```
-kind create cluster
-make deploy.kind
-kubectl -n kube-federation-system get kubefedcluster -oyaml
-```
 ### fix
 ```
 k get po -n kube-system kube-apiserver-kind-control-plane -owide
