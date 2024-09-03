@@ -15,6 +15,19 @@ contexts:
   name: `cluster1`
 current-context: `cluster1`
 
+### 报错处理controller-gen object:headerFile=./hack/boilerplate.go.txt paths="./..."
+```
+cd ~/kubefed/
+vim Makefile
+# Generate code
+#generate-code: controller-gen
+#       controller-gen object:headerFile=./hack/boilerplate.go.txt paths="./..."
+
+#generate: generate-code kubefedctl
+#       ./scripts/sync-up-helm-chart.sh
+#       ./scripts/update-bindata.sh
+```
+
 ### 安装
 ```
 kind create cluster
