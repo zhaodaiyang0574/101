@@ -13,6 +13,7 @@ spec:
             values:
             - antarctica-east1
             - antarctica-west1
+            - beijing
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
         preference:
