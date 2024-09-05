@@ -28,12 +28,9 @@ kubectl -n kube-federation-system get kubefedcluster -oyaml
 cd ~/kubefed/
 vim Makefile
 # Generate code
-#generate-code: controller-gen
+generate-code: controller-gen
 #       controller-gen object:headerFile=./hack/boilerplate.go.txt paths="./..."
 
-#generate: generate-code kubefedctl
-#       ./scripts/sync-up-helm-chart.sh
-#       ./scripts/update-bindata.sh
 ```
 
 ### fix
