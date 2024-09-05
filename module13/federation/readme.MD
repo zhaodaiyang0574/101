@@ -15,23 +15,23 @@ contexts:
   name: `cluster1`
 current-context: `cluster1`
 
-###安装最新版go
+### 安装最新版go
 ```
 https://go.dev/doc/install
 ```
 
-###安装helm3
+### 安装helm3
 ```
 https://helm.sh/docs/intro/install/
 ```
 
-###安装docker
+### 安装docker
 ```
 apt update && apt install docker.io
 https://docs.docker.com/engine/install/ubuntu/
 ```
 
-###加入集群
+### 加入集群
 ```
 https://github.com/kubernetes-retired/kubefed/blob/master/docs/cluster-registration.md#joining-clusters
 ```
