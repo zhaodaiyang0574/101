@@ -34,6 +34,7 @@ https://docs.docker.com/engine/install/ubuntu/
 ### 加入集群
 ```
 https://github.com/kubernetes-retired/kubefed/blob/master/docs/cluster-registration.md#joining-clusters
+https://stackoverflow.com/questions/55774302/what-to-do-with-the-cluster-before-joining-it-to-a-federation-v2
 ```
 
 
@@ -49,8 +50,12 @@ kubectl -n kube-federation-system get kubefedcluster -oyaml
 cd ~/kubefed/
 vim Makefile
 # Generate code
-generate-code: controller-gen
+#generate-code: controller-gen
 #       controller-gen object:headerFile=./hack/boilerplate.go.txt paths="./..."
+
+#generate: generate-code kubefedctl
+#       ./scripts/sync-up-helm-chart.sh
+#       ./scripts/update-bindata.sh
 
 ```
 
